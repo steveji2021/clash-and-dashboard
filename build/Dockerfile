@@ -1,5 +1,6 @@
-FROM --platform=$TARGETPLATFORM dreamacro/clash:v1.16.0
+FROM dreamacro/clash:latest
 
+EXPOSE 7890
 EXPOSE 8080
 
 RUN apk update && apk add nginx
